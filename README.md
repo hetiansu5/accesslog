@@ -44,7 +44,7 @@ engine.Use(ginacl.AccessLogFunc(acl))
 #### 与 `net/http` 包一起使用
 
 1. 获取依赖: `go get -u -v github.com/hetiansu5/accesslog/nethttp` 
-1. import: `import httpacl "github.com/hetiansu5//accesslog/nethttp"`
+1. import: `import httpacl "github.com/hetiansu5/accesslog/nethttp"`
 1. Wrap `http.HandlerFunc`:
 
 ```golang
