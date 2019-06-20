@@ -1,6 +1,6 @@
 ## 安装
 ```shell
-go get -u -v gitlab.meitu.com/gocommons/accesslog
+go get -u -v github.com/hetiansu5/accesslog
 ```
     
 ## 使用
@@ -94,8 +94,8 @@ Pattern说明：
 
 #### 与 [gin](https://github.com/gin-gonic/gin) 框架一起使用
 
-1. 获取依赖: `go get -u -v gitlab.meitu.com/gocommons/accesslog/gin` 
-1. import: `import ginacl "gitlab.meitu.com/gocommons/accesslog/gin"`
+1. 获取依赖: `go get -u -v github.com/hetiansu5/accesslog/gin` 
+1. import: `import ginacl "github.com/hetiansu5/accesslog/gin"`
 1. 组合`gin.HandlerFunc`:
 
 ```golang
@@ -105,8 +105,8 @@ engine.Use(ginacl.AccessLogFunc(acl))
 
 #### 与 `net/http` 包一起使用
 
-1. 获取依赖: `go get -u -v gitlab.meitu.com/gocommons/accesslog/nethttp` 
-1. import: `import httpacl "gitlab.meitu.com/gocommons/accesslog/nethttp"`
+1. 获取依赖: `go get -u -v github.com/hetiansu5/accesslog/nethttp` 
+1. import: `import httpacl "github.com/hetiansu5//accesslog/nethttp"`
 1. Wrap `http.HandlerFunc`:
 
 ```golang
